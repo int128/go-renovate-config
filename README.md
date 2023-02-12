@@ -11,3 +11,15 @@ Renovate config for Go and Kubernetes.
   ],
 }
 ```
+
+Here are some flavors.
+
+```json5
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>int128/go-renovate-config:kubernetes",
+    "github>int128/go-renovate-config:kustomization-github-releases",
+  ],
+}
+```
