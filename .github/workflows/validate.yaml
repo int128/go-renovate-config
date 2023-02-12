@@ -5,7 +5,7 @@ on:
     paths:
       - .github/workflows/validate.yaml
       - .github/renovate.*
-      - default.json
+      - '*.json'
   push:
     branches:
       - main
