@@ -4,8 +4,8 @@ on:
   pull_request:
     paths:
       - .github/workflows/validate.yaml
+      - .github/renovate.*
       - default.json
-      - renovate.*
   push:
     branches:
       - main
