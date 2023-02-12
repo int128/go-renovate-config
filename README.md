@@ -20,6 +20,7 @@ Here are some flavors.
   "extends": [
     "github>int128/go-renovate-config:kubernetes",
     "github>int128/go-renovate-config:kustomization-github-releases",
+    "github>int128/go-renovate-config:doc-github-releases",
   ],
 }
 ```
