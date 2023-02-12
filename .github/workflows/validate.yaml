@@ -19,4 +19,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npx --package renovate -c renovate-config-validator
+      - run: npx --package=renovate -- renovate-config-validator *.json .github/renovate.json*
