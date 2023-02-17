@@ -1,26 +1,37 @@
 # go-renovate-config [![validate](https://github.com/int128/go-renovate-config/actions/workflows/validate.yaml/badge.svg)](https://github.com/int128/go-renovate-config/actions/workflows/validate.yaml)
 
-Renovate config for Go and Kubernetes.
+This is a config of Renovate for Go and Kubernetes project.
+
+## Getting Started
 
 ```json5
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>int128/renovate-base",
+    "config:base",
+    ":automergeMinor",
+    ":label(renovate/{{depName}})",
     "github>int128/go-renovate-config",
   ],
 }
 ```
 
-Here are some flavors.
+## Flavors
+
+### Kubernetes specific rules
 
 ```json5
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
     "github>int128/go-renovate-config:kubernetes",
-    "github>int128/go-renovate-config:kustomization-github-releases",
+```
+
+### Update GitHub Releases in README
+
+```json5
     "github>int128/go-renovate-config:doc-github-releases",
-  ],
-}
+```
+
+### Update GitHub Releases in kustomization.yaml
+
+```json5
+    "github>int128/go-renovate-config:kustomization-github-releases",
 ```
