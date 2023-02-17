@@ -9,7 +9,6 @@ This is a config of Renovate for Go and Kubernetes project.
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":automergeMinor",
     ":label(renovate/{{depName}})",
     "github>int128/go-renovate-config",
   ],
@@ -17,6 +16,12 @@ This is a config of Renovate for Go and Kubernetes project.
 ```
 
 ## Flavors
+
+### GitHub Actions workflows
+
+```json5
+    "github>int128/go-renovate-config:github-actions",
+```
 
 ### Kubernetes specific rules
 
