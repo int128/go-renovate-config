@@ -7,8 +7,8 @@
         "kustomization.yaml"
       ],
       "matchStrings": [
-        "https://raw.githubusercontent.com/(?<depName>.*?)/(?<currentValue>.*)/",
-        "https://github.com/(?<depName>.*?)/releases/download/(?<currentValue>.*)/"
+        "https://raw.githubusercontent.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>[^/]+)/",
+        "https://github.com/(?<depName>[^/]+/[^/]+)/releases/download/(?<currentValue>[^/]+)/"
       ],
       "datasourceTemplate": "github-releases"
     }
