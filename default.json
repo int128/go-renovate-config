@@ -7,5 +7,20 @@
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
+  ],
+  "regexManagers": [
+    {
+      "description": "Update this config by self",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "int128/go-renovate-config",
+      "fileMatch": [
+        "^renovate\\.json5?$",
+        "^\\.github/renovate\\.json5?$",
+      ],
+      "matchStrings": [
+        "\"github>int128/go-renovate-config#(?<currentValue>.+?)\"",
+        "\"github>int128/go-renovate-config:.+?#(?<currentValue>.+?)\""
+      ]
+    }
   ]
 }
