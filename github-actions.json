@@ -2,18 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "regexManagers": [
     {
-      "description": "Update go-version in workflow",
-      "fileMatch": [
-        "^\\.github/workflows/.+\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "\\s+go-version: (?<currentValue>.+)\\n"
-      ],
-      "depNameTemplate": "golang-version",
-      "datasourceTemplate": "golang-version",
-      "versioningTemplate": "semver-coerced"
-    },
-    {
       "description": "Update golangci-lint in workflow",
       "fileMatch": [
         "^\\.github/workflows/.+\\.ya?ml$"
