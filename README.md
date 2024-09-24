@@ -4,7 +4,7 @@ This is a config of Renovate for Go and Kubernetes project.
 
 ## Getting Started
 
-```json5
+```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
@@ -16,26 +16,32 @@ This is a config of Renovate for Go and Kubernetes project.
 
 ## Flavors
 
+### Update `go` directive in go.mod
+
+```json
+    "github>int128/go-renovate-config:go-directive",
+```
+
 ### GitHub Actions workflows
 
-```json5
+```json
     "github>int128/go-renovate-config:github-actions",
 ```
 
 ### Kubernetes specific rules
 
-```json5
+```json
     "github>int128/go-renovate-config:kubernetes",
 ```
 
 ### Update GitHub Releases in README
 
-```json5
+```json
     "github>int128/go-renovate-config:doc-github-releases",
 ```
 
 ### Update GitHub Releases in kustomization.yaml
 
-```json5
+```json
     "github>int128/go-renovate-config:kustomization-github-releases",
 ```
