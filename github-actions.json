@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update golangci-lint in workflow",
       "fileMatch": [
         "^\\.github/workflows/.+\\.ya?ml$"

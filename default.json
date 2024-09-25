@@ -8,8 +8,9 @@
     "gomodTidy",
     "gomodUpdateImportPaths"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update this config by self",
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "int128/go-renovate-config",
