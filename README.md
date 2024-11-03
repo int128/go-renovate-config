@@ -34,6 +34,12 @@ This is a config of Renovate for Go and Kubernetes project.
     "github>int128/go-renovate-config:kubernetes",
 ```
 
+### Kubebuilder specific rules
+
+```json
+    "github>int128/go-renovate-config:kubebuilder",
+```
+
 ### Update GitHub Releases in README
 
 ```json
