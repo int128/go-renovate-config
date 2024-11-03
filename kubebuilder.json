@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Keep client-go to v0",
+      "matchPackageNames": [
+        "k8s.io/client-go"
+      ],
+      "allowedVersions": "v0.x"
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update golangci-lint in Makefile",
+      "fileMatch": [
+        "Makefile"
+      ],
+      "matchStrings": [
+        "^GOLANGCI_LINT_VERSION \\?= (?<currentValue>.+)\\n"
+      ],
+      "depNameTemplate": "golangci/golangci-lint",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
