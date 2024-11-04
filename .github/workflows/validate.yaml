@@ -2,16 +2,12 @@ name: validate
 
 on:
   pull_request:
-    paths:
-      - .github/workflows/validate.yaml
-      - .github/renovate.*
-      - '*.json'
   push:
     branches:
       - main
 
 jobs:
   validate:
-    uses: int128/renovate-base/.github/workflows/validate.yaml@main
+    uses: int128/renovate-config-validator-workflow/.github/workflows/validate.yaml@main
     with:
       config: .github/renovate.* *.json
