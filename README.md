@@ -22,12 +22,6 @@ This is a config of Renovate for Go and Kubernetes project.
     "github>int128/go-renovate-config:go-directive",
 ```
 
-### GitHub Actions workflows
-
-```json
-    "github>int128/go-renovate-config:github-actions",
-```
-
 ### Kubernetes specific rules
 
 ```json
