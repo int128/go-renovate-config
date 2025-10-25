@@ -13,10 +13,16 @@ This is a config of Renovate for Go and Kubernetes project.
 
 ## Flavors
 
-### Update `go` directive in go.mod
+### Update go version in go.mod
 
 ```json
-    "github>int128/go-renovate-config:go-directive",
+    "github>int128/go-renovate-config:go-version",
+```
+
+### Update go version in go.mod and Dockerfile together
+
+```json
+    "github>int128/go-renovate-config:go-version-with-dockerfile",
 ```
 
 ### Kubernetes specific rules
