@@ -5,7 +5,7 @@
     "helpers:pinGitHubActionDigests",
     "local>int128/go-renovate-config",
     "local>int128/go-renovate-config:github-releases(README.md)",
-    "local>int128/go-renovate-config:go-directive",
+    "local>int128/go-renovate-config:go-version-with-dockerfile",
     "local>int128/go-renovate-config:kubebuilder",
     "local>int128/go-renovate-config:kubernetes"
   ]
