@@ -7,10 +7,7 @@ This is a config of Renovate for Go and Kubernetes project.
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "github>int128/go-renovate-config",
-  ],
+  "extends": ["config:recommended", "github>int128/go-renovate-config"]
 }
 ```
 
@@ -34,14 +31,9 @@ This is a config of Renovate for Go and Kubernetes project.
     "github>int128/go-renovate-config:kubebuilder",
 ```
 
-### Update GitHub Releases in README
+### Update GitHub Releases URLs
 
 ```json
-    "github>int128/go-renovate-config:doc-github-releases",
-```
-
-### Update GitHub Releases in kustomization.yaml
-
-```json
-    "github>int128/go-renovate-config:kustomization-github-releases",
+    "github>int128/go-renovate-config:github-releases(**/kustomization.yaml)",
+    "github>int128/go-renovate-config:github-releases(README.md)",
 ```
