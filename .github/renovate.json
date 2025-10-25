@@ -3,5 +3,6 @@
   "extends": [
     "github>int128/renovate-base",
     "helpers:pinGitHubActionDigests",
-  ],
+    "local>int128/go-renovate-config"
+  ]
 }
