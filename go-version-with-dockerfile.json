@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Update go.mod with Dockerfile",
+      "customType": "regex",
+      "managerFilePatterns": ["go.mod"],
+      "matchStrings": ["(?:^|\\n)go\\s+(?<currentValue>[0-9.]+)"],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "golang"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Avoid pin digest error in go.mod",
+      "matchFileNames": ["go.mod"],
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["golang"],
+      "pinDigests": false
+    }
+  ]
+}
