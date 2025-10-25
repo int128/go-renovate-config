@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Update the URLs for GitHub releases",
+      "customType": "regex",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": [
+        "{{arg0}}"
+      ],
+      "matchStrings": [
+        "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>[^/]+)/",
+        "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+?)/(?<currentDigest>[^/]+)/.+\\s#\\s+(?<currentValue>.+)\\n",
+        "https://github\\.com/(?<depName>[^/]+/[^/]+)/releases/download/(?<currentValue>[^/]+)/"
+      ]
+    }
+  ]
+}
